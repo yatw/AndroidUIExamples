@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.androiduiexamples.customToolbar.customToolbarActivity;
 import com.androiduiexamples.navigationDrawer.navigationDrawerActivity;
 import com.androiduiexamples.recyclerView.recyclerActivity;
 
@@ -34,6 +35,16 @@ public class MainActivity extends AppCompatActivity {
 
             public void onClick(View v) {
                 Intent jumpIntent = new Intent(MainActivity.this, navigationDrawerActivity.class);
+                startActivity(jumpIntent);
+            }
+
+        });
+
+        Button gotoCustomToolbar = findViewById(R.id.gotoCustomToolbar);
+        gotoCustomToolbar.setOnClickListener(new View.OnClickListener() {
+
+            public void onClick(View v) {
+                Intent jumpIntent = new Intent(MainActivity.this, customToolbarActivity.class);
                 startActivity(jumpIntent);
             }
 
