@@ -7,7 +7,7 @@
 
     <Space
         android:layout_width="match_parent"
-        android:layout_height="100dp" />
+        android:layout_height="50dp" />
 
 
     <de.hdodenhof.circleimageview.CircleImageView
@@ -24,7 +24,7 @@
         app:layout_constraintTop_toTopOf="parent" />
     <Space
         android:layout_width="match_parent"
-        android:layout_height="100dp" />
+        android:layout_height="50dp" />
 
 
     <com.mikhaellopez.circularimageview.CircularImageView

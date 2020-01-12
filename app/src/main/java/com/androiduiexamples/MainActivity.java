@@ -9,6 +9,7 @@ import android.widget.Button;
 
 import com.androiduiexamples.circularImage.circularImageActivity;
 import com.androiduiexamples.customToolbar.customToolbarActivity;
+import com.androiduiexamples.fragment.fragmentActivity;
 import com.androiduiexamples.navigationDrawer.navigationDrawerActivity;
 import com.androiduiexamples.recyclerView.recyclerActivity;
 
@@ -61,6 +62,15 @@ public class MainActivity extends AppCompatActivity {
 
         });
 
+        Button gotoFragment = findViewById(R.id.gotoFragment);
+        gotoFragment.setOnClickListener(new View.OnClickListener() {
+
+            public void onClick(View v) {
+                Intent jumpIntent = new Intent(MainActivity.this, fragmentActivity.class);
+                startActivity(jumpIntent);
+            }
+
+        });
 
     }
 }

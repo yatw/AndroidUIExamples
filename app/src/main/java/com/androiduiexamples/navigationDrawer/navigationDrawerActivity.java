@@ -9,6 +9,7 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import android.os.Bundle;
 import android.view.Gravity;
 import android.view.MenuItem;
+import android.widget.Toast;
 
 
 import com.androiduiexamples.R;
@@ -81,19 +82,19 @@ public class navigationDrawerActivity extends AppCompatActivity {
 
         switch(menuItem.getItemId()) {
             case R.id.nav_first_fragment:
-                System.out.println("1");
+                Toast.makeText(getApplicationContext(), "First", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.nav_second_fragment:
-                System.out.println("2");
+                Toast.makeText(getApplicationContext(), "Second", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.nav_third_fragment:
-                System.out.println("3");
+                Toast.makeText(getApplicationContext(), "Third", Toast.LENGTH_SHORT).show();
                 break;
             default:
-                System.out.println("default");
+                Toast.makeText(getApplicationContext(), "default", Toast.LENGTH_SHORT).show();
         }
 
-        mDrawer.closeDrawer(Gravity.RIGHT);
+        //mDrawer.closeDrawer(Gravity.RIGHT);
 
     }
 
