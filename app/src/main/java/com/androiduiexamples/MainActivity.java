@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.androiduiexamples.circularImage.circularImageActivity;
 import com.androiduiexamples.customToolbar.customToolbarActivity;
 import com.androiduiexamples.navigationDrawer.navigationDrawerActivity;
 import com.androiduiexamples.recyclerView.recyclerActivity;
@@ -45,6 +46,16 @@ public class MainActivity extends AppCompatActivity {
 
             public void onClick(View v) {
                 Intent jumpIntent = new Intent(MainActivity.this, customToolbarActivity.class);
+                startActivity(jumpIntent);
+            }
+
+        });
+
+        Button gotoCircularImage = findViewById(R.id.gotoCircularImage);
+        gotoCircularImage.setOnClickListener(new View.OnClickListener() {
+
+            public void onClick(View v) {
+                Intent jumpIntent = new Intent(MainActivity.this, circularImageActivity.class);
                 startActivity(jumpIntent);
             }
 

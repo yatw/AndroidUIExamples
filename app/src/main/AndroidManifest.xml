@@ -12,6 +12,7 @@
         <activity android:name="com.androiduiexamples.navigationDrawer.navigationDrawerActivity"></activity>
         <activity android:name="com.androiduiexamples.recyclerView.recyclerActivity" />
         <activity android:name="com.androiduiexamples.customToolbar.customToolbarActivity" />
+        <activity android:name="com.androiduiexamples.circularImage.circularImageActivity" />
         <activity android:name="com.androiduiexamples.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
